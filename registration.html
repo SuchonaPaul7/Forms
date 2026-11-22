@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="container wider">
+        <div class="header">
+            <h1>Computer Club</h1>
+            <p>Register for an account to participate in contests and workshops.</p>
+        </div>
+        <main class="form-card">
+            <h2>Membership Registration</h2>
+            <form action="#" method="POST">
+                <div class="field">
+                    <label for="full_name">Full Name <span class="req">*</span></label>
+                    <input type="text" id="full_name" name="full_name" required>
+                </div>
+                <div class="field">
+                    <label for="student_id">Student ID <span class="req">*</span></label>
+                    <input type="text" id="student_id" name="student_id" required>
+                </div>
+                <div class="field">
+                    <label for="email">Email <span class="req">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                </div>
+                <div class="field">
+                    <label for="password">Password <span class="req">*</span>
+                        <span class="hint">At least 8 characters.</span>
+                    </label>
+                    <input type="password" id="password" name="password" minlength="8" required>
+                </div>
+                <div class="field">
+                    <label for="birth_date">Date of Birth <span class="req">*</span></label>
+                    <input type="date" id="birth_date" name="birth_date" required>
+                </div>
+                <div class="field">
+                    <label for="telephone">Telephone <span class="req">*</span></label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="017XXXXXXXX" required>
+                </div>
+                
+                <div class="field">
+                    <label for="gender">Gender <span class="req">*</span></label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label class="group-label">Membership Type <span class="req">*</span></label>
+                    <div class="choice">
+                        <input type="radio" id="membership_type_freshers" name="membership_type" value="freshers" required>
+                        <label for="membership_type_freshers">Freshers</label>
+                    </div>
+                    <div class="choice">
+                        <input type="radio" id="membership_type_general" name="membership_type" value="general">
+                        <label for="membership_type_general">General</label>
+                    </div>
+                    <div class="choice">
+                        <input type="radio" id="membership_type_executive" name="membership_type" value="executive">
+                        <label for="membership_type_executive">Executive</label>
+                    </div>
+                    <div class="choice">
+                        <input type="radio" id="membership_type_steering" name="membership_type" value="steering">
+                        <label for="membership_type_steering">Steering Committee</label>
+                    </div>
+                    <div class="choice">
+                        <input type="radio" id="membership_type_alumni" name="membership_type" value="alumni">
+                        <label for="membership_type_alumni">Alumni</label>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="group-label">Activity <span class="req">*</span></label>
+                    <div class="choice">
+                        <input type="checkbox" id="activity_web" name="activity_type" value="web">
+                        <label for="activity_web">Web Development</label>
+                    </div>
+                    <div class="choice">
+                        <input type="checkbox" id="activity_app" name="activity_type" value="app">
+                        <label for="activity_app">App Development</label>
+                    </div>
+                    <div class="choice">
+                        <input type="checkbox" id="activity_robo" name="activity_type" value="robotics">
+                        <label for="activity_robo">Robotics</label>
+                    </div>
+                    <div class="choice">
+                        <input type="checkbox" id="activity_contest" name="activity_type" value="contest">
+                        <label for="activity_contest">Programming Contest</label>
+                    </div>
+                    <div class="choice">
+                        <input type="checkbox" id="activity_seminar" name="activity_type" value="seminar">
+                        <label for="activity_seminar">AI Seminars</label>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="message">Why do you want to join? <span class="req">*</span></label>
+                    <textarea id="message" name="message" rows="4" maxlength="500" placeholder="Write your reasons here..." required></textarea>
+                </div>
+
+                <div class="choice full">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the Club's terms and conditions. <span class="req">*</span></label>
+                </div>
+
+                <div class="buttons">
+                    <button type="submit" class="btn-primary">Register</button>
+                    <button type="reset" class="btn-secondary">Reset</button>
+                </div>
+            </form>
+            <p class="bottom-text">Already have an account? <a href="login.html">Login here</a></p>
+        </main>
+    </div>
+</body>
+</html>
